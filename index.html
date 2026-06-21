@@ -282,6 +282,69 @@ Send Payment Screenshot
 </div>
 
 </section>
+  <section style="padding:60px 8%;background:#eef5ff;">
+
+<h2 style="text-align:center;font-size:35px;">📊 Our Achievements</h2>
+
+<div class="grid">
+
+<div class="card">
+<h1>500+</h1>
+<p>Students</p>
+</div>
+
+<div class="card">
+<h1>1000+</h1>
+<p>Notes Downloaded</p>
+</div>
+
+<div class="card">
+<h1>4.9⭐</h1>
+<p>Average Rating</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h2 style="text-align:center;">🌙 Dark Mode</h2>
+
+<center>
+<button onclick="darkMode()"
+style="padding:15px 35px;
+border:none;
+background:#0b57d0;
+color:white;
+border-radius:30px;
+cursor:pointer;">
+Toggle Dark Mode
+</button>
+</center>
+
+</section>
+
+<script>
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+
+const style=document.createElement("style");
+style.innerHTML=`
+.dark{
+background:#121212;
+color:white;
+}
+.dark .card{
+background:#222;
+color:white;
+}
+.dark header,
+.dark footer{
+background:#000;
+}
+`;
+document.head.appendChild(style);
+</script>
 <footer>
 
 © 2026 Vineet Notes | Made by Vineet Singh Yadav
