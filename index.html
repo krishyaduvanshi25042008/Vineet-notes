@@ -145,6 +145,53 @@ border-radius:50%;
 font-size:24px;
 text-decoration:none;
 }
+
+
+<style>
+
+/* your old CSS already here */
+
+/* PASTE NEW CSS HERE 👇 */
+.accordion{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.acc-item{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+.acc-btn{
+width:100%;
+text-align:left;
+padding:18px;
+font-size:18px;
+font-weight:600;
+border:none;
+background:#0b57d0;
+color:white;
+cursor:pointer;
+}
+
+.acc-panel{
+max-height:0;
+overflow:hidden;
+transition:0.4s ease;
+padding:0 18px;
+}
+
+.acc-item.active .acc-panel{
+max-height:600px;
+padding:15px 18px;
+}
+
+</style>
+
+  
 </style>
 
 </head>
