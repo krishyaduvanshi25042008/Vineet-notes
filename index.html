@@ -1,6 +1,10 @@
 @krish_yaduvanshi_25<!DOCTYPE html>
 <html lang="en">
 <head>
+<section class="motivational">
+  <h2>✨ Motivational Thoughts</h2>
+  <p id="quote">Loading...</p>
+</section> 
 <meta name="google-site-verification" content="Aqkb_Nczt8sb7sRVD-iLyHbHMB3mv0xzzuxfjFvHwhk" />  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -243,6 +247,23 @@ animation:bounce 1.5s infinite;
 50%{transform:translateY(-8px);}
 }  
 
+
+  <style>
+  .motivational {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 12px;
+    margin: 20px;
+  }
+
+  #quote {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    transition: opacity 0.5s ease;
+  }
+</style>
   
 </style>
 
@@ -698,6 +719,35 @@ card.style.display = "none";
 
 });
 </script>
+<script>
+  const quotes = [
+    "Success comes from consistency.",
+    "Keep going, don’t stop.",
+    "Small steps = big success.",
+    "Dream big, work hard.",
+    "Your future depends on today.",
+    "Discipline brings success.",
+    "Hard work always wins."
+  ];
+
+  let index = 0;
+  const quoteElement = document.getElementById("quote");
+
+  function changeQuote() {
+    quoteElement.style.opacity = 0;
+
+    setTimeout(() => {
+      quoteElement.textContent = quotes[index];
+      quoteElement.style.opacity = 1;
+
+      index = (index + 1) % quotes.length;
+    }, 500);
+  }
+
+  changeQuote();
+  setInterval(changeQuote, 3000);
+</script>
+
 
 </body>
 </html>
