@@ -28,6 +28,26 @@ font-family:'Poppins',sans-serif;
   🚀 Buy best notes on Study Hub and improve your marks! | 
   🔥 Start preparing today for a better tomorrow!
 </div>
+
+  .marquee {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 header{
 background:#0b57d0;
 color:white;
