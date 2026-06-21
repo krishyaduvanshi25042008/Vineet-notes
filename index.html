@@ -645,5 +645,29 @@ Contact Now
 
 </footer>
 
+
+
+<script>
+let items = document.querySelectorAll(".acc-item");
+
+items.forEach(item => {
+  item.querySelector(".acc-btn").addEventListener("click", () => {
+
+    items.forEach(i => {
+      if(i !== item){
+        i.classList.remove("active");
+      }
+    });
+
+    item.classList.toggle("active");
+
+  });
+});
+</script>
+
+</body>
+</html>
+
+  
 </body>
 </html>
