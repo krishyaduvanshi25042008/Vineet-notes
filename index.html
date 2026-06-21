@@ -711,5 +711,28 @@ items.forEach(item => {
 
   <a href="https://wa.me/916386810465" class="wa-float">💬</a>
 <a href="https://wa.me/916386810465" class="wa-float">💬</a>
+<script>
+document.getElementById("search").addEventListener("keyup", function(){
+
+let value = this.value.toLowerCase();
+let cards = document.querySelectorAll(".acc-item");
+
+cards.forEach(card => {
+
+let text = card.innerText.toLowerCase();
+
+if(text.includes(value)){
+card.style.display = "block";
+} else {
+card.style.display = "none";
+}
+
+});
+
+});
+</script>
+
 </body>
 </html>
+
+
